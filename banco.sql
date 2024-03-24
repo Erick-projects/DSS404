@@ -166,7 +166,8 @@ CREATE TABLE IF NOT EXISTS `usuario` (
 --
 
 INSERT INTO `usuario` (`IdUsuario`, `Nombre`, `Email`, `Dui`, `TipoUsuario`, `Estado`, `IdSucursal`, `nombreUsuario`, `contraseña`) VALUES
-(1, 'Mario', 'Mario@gmail.com', 1234559, 'Cajero', 'Activo', 1, 'Marioo\r\n', 'Mario123');
+(1, 'Mario', 'Mario@gmail.com', 1234559, 'Cajero', 'Activo', 1, 'Marioo\r\n', 'Mario123'),
+(2, 'Julian', 'Julian@gmail.com', 741852963, 'Gerente', 'activo', 1, 'Julian', 'Julian');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
