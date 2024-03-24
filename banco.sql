@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1:3306
--- Tiempo de generación: 22-03-2024 a las 02:11:16
+-- Tiempo de generación: 24-03-2024 a las 04:08:53
 -- Versión del servidor: 8.0.34
 -- Versión de PHP: 8.2.13
 
@@ -36,6 +36,7 @@ CREATE TABLE IF NOT EXISTS `cliente` (
   `Email` text NOT NULL,
   `IdCuenta` int NOT NULL,
   `nombreUsuario` varchar(100) DEFAULT NULL,
+  `contraseña` varchar(100) DEFAULT NULL,
   PRIMARY KEY (`IdCliente`),
   KEY `IdCliente` (`IdCliente`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
@@ -156,6 +157,7 @@ CREATE TABLE IF NOT EXISTS `usuario` (
   `Estado` text NOT NULL,
   `IdSucursal` int NOT NULL,
   `nombreUsuario` varchar(100) DEFAULT NULL,
+  `contraseña` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`IdUsuario`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
@@ -163,8 +165,8 @@ CREATE TABLE IF NOT EXISTS `usuario` (
 -- Volcado de datos para la tabla `usuario`
 --
 
-INSERT INTO `usuario` (`IdUsuario`, `Nombre`, `Email`, `Dui`, `TipoUsuario`, `Estado`, `IdSucursal`, `nombreUsuario`) VALUES
-(1, 'Mario', 'Mario@gmail,com', 1234559, 'Cajero', 'Activo', 1, 'Marioo\r\n');
+INSERT INTO `usuario` (`IdUsuario`, `Nombre`, `Email`, `Dui`, `TipoUsuario`, `Estado`, `IdSucursal`, `nombreUsuario`, `contraseña`) VALUES
+(1, 'Mario', 'Mario@gmail.com', 1234559, 'Cajero', 'Activo', 1, 'Marioo\r\n', 'Mario123');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
