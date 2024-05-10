@@ -170,6 +170,35 @@ INSERT INTO `usuario` (`IdUsuario`, `Nombre`, `Email`, `Dui`, `TipoUsuario`, `Es
 (2, 'Julian', 'Julian@gmail.com', 741852963, 'Gerente', 'activo', 1, 'Julian', 'Julian');
 COMMIT;
 
+--
+-- Restricciones para tablas volcadas
+--
+--
+-- Filtros para la tabla `cuenta_bancaria`
+--
+ALTER TABLE `cuenta_bancaria`
+  ADD CONSTRAINT `fk_cuenta_cliente` FOREIGN KEY (`IdCliente`) REFERENCES `cliente` (`IdCliente`);
+
+--
+-- Filtros para la tabla `movimientos`
+--
+ALTER TABLE `movimientos`
+  ADD CONSTRAINT `fk_movimientos_cuenta` FOREIGN KEY (`IdCuenta`) REFERENCES `cuenta_bancaria` (`IdCuenta`);
+
+--
+-- Filtros para la tabla `prestamo`
+--
+ALTER TABLE `prestamo`
+  ADD CONSTRAINT `fk_prestamo_cliente` FOREIGN KEY (`IdCliente`) REFERENCES `cliente` (`IdCliente`);
+
+--
+-- Filtros para la tabla `usuario`
+--
+ALTER TABLE `usuario`
+  ADD CONSTRAINT `fk_usuario_sucursal` FOREIGN KEY (`IdSucursal`) REFERENCES `sucursal` (`IdSucursal`);
+COMMIT;
+
+
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
