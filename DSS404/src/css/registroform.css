@@ -1,0 +1,69 @@
+body{
+    background-color:#bde4f3;
+    color:black;
+    font-family:Arial,sans-serif;
+}
+header{
+    text-align:center;
+}
+form{
+    max-width:500px;
+    height:600px;
+    margin:0 auto;
+    border:2px solid;
+    background-color:#ccddf8;
+    text-align:center;
+}
+.user1{
+    margin-top:50px;
+    margin-bottom:40px;
+}
+.TipoCuentas{
+    width:200px;
+    height:40px;
+}
+.CreateAC>input{
+    border: none;
+    color:white;
+    background-color:#5bb85d;
+    height:45px;
+    width:150px;
+    border-radius: 3%;
+}
+.usertwo{
+    
+    display:flex;
+    align-items:center;
+    margin-bottom:10px;
+    margin-left:25%;
+}
+.usertwo>input{
+    background-color:#ccddf8;
+    border:1px solid rgb(146,146,146);
+}
+.CorreoElec,.Password{
+    display:flex;
+    align-items:center;
+    margin-bottom:10px;
+    margin-left:25%;
+}
+.CorreoElec>input,.Password>input{
+    background-color:#ccddf8;
+    border:1px solid rgb(146,146,146);
+}
+.Other{
+    text-align:center;
+    margin-top: 26px;
+    
+}
+.Other>a{
+    background:#ccddf8;
+    border:1px solid rgb(146,146,146);
+    text-decoration:none;
+    color:black;
+    padding: 26px;
+
+}
+.CreateAC{
+    margin-bottom:30px;
+}
