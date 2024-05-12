@@ -59,14 +59,38 @@
         </div>
         <div class="usuario-cliente">
             <h2>Usuario Cliente</h2>
-            <div class="list-group">
-                <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
-                Nombre: Alejandro Jose Perez Hernandez
-                <p class="mb-1">DUI: 987654321</p>
-                <p class="mb-1">Correo: Alejandro@gmail.com</p>
-                <p class="mb-1">Usuario: AlejoPerez</p>
-                </a>
-            </div>
+            <?php
+            $servername = "localhost";
+            $username = "root";
+            $password = "";
+            $dbname = "banco";
+
+            $conn = new mysqli($servername, $username, $password, $dbname);
+
+            if ($conn->connect_error) {
+                die("Conexión fallida: " . $conn->connect_error);
+            }
+
+            $sql = "SELECT * FROM cliente WHERE IdCliente = 1";
+            $result = $conn->query($sql);
+
+            if ($result->num_rows > 0) {
+                while ($row = $result->fetch_assoc()) {
+                    echo "<div class='list-group'>";
+                    echo "<a href='#' class='list-group-item list-group-item-action active' aria-current='true'>";
+                    echo "Nombre: " . $row['Nombres'] . " " . $row['Apellidos'] . "<br>";
+                    echo "DUI: " . $row['Dui'] . "<br>";
+                    echo "Correo: " . $row['Email'] . "<br>";
+                    echo "Usuario: " . $row['nombreUsuario'] . "<br>";
+                    echo "</a>";
+                    echo "</div>";
+                }
+            } else {
+                echo "No se encontró información del cliente.";
+            }
+
+            $conn->close();
+            ?>
         </div>
         <div class="transacciones">
             <h2>Transacciones</h2>
@@ -75,11 +99,12 @@
                     Transacciones
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <li><a class="dropdown-item" href="Transacciones.php?opcion=pagos">Abono</a></li>
-                <li><a class="dropdown-item" href="Transacciones.php?opcion=retiro_efectivo">Retiro de efectivo</a></li>
-            </ul>
+                    <li><a class="dropdown-item" href="Transacciones.php?opcion=pagos">Abono</a></li>
+                    <li><a class="dropdown-item" href="Transacciones.php?opcion=retiro_efectivo">Retiro de efectivo</a></li>
+                </ul>
             </div>
         </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
