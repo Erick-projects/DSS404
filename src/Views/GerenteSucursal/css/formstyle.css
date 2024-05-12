@@ -1,0 +1,61 @@
+form {
+    width: 80%; 
+    margin: 0 auto; 
+    background-color: white;
+}
+form div {
+    margin-bottom: 20px;
+    background-color: white;
+    
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    background-color: white;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; 
+    background-color: #fdd408;
+}
+
+select {
+    height: 40px;
+}
+
+/* Estilos para el botón */
+input[type="submit"] {
+    background-color: #E74D4D;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #E81919;
+}
+.new {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}

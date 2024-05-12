@@ -1,0 +1,87 @@
+* {
+    background-color: #0844a4;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Banner {
+    background-color: #e6e6e6;
+    color: black; 
+    padding: 10px;
+    padding-bottom: 2px;
+    border: 3px solid black;
+    text-align: center; 
+}
+.Namebac {
+    margin-top: 25px;
+    position: relative; 
+    align-items: center;
+    justify-content: center;
+}
+.logo {
+    width: 180px;
+    height: auto;
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    margin-right: 20px; 
+    border-radius: 20px;
+    margin-top: -18px;
+    cursor: pointer;
+}
+.name-container {
+    color: white;
+    text-align: center; 
+}
+.name {
+    margin: 0; 
+    font-size: 65px;
+}
+.name2 {
+    margin: 0;
+    font-size: 35px;
+    margin-top: 40px;
+}
+.activities {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+.activity:hover {
+    transform: scale(1.05);
+    background-color: #bbdefa; 
+}
+.activity {
+    width: 40%;
+    background-color: yellow;
+    padding: 20px;
+    margin: 2px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    font-weight: bold;
+    font-size: 26px;
+}
+.options {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+.option {
+    width: 180px;
+    height: 50px;
+    background-color: #f48fb1;
+    margin:1.5px;
+    font-size: 22px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.option:hover {
+    transform: scale(1.02);
+    background-color: #e1bee8; 
+}

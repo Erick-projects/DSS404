@@ -1,0 +1,104 @@
+.status {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+.managerPfp {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #237cb4;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    border-radius: 10px;
+    margin-top: 10%;
+    margin-right: 1px;
+}
+.managerPfp h3{
+    background-color: #237cb4;
+    color: white;
+    font-size: 28px;
+}
+.userEmail{
+    background-color: #237cb4;
+}
+.userEmail input{
+    font-size: 18px;
+    color: white;
+    border: 2px solid white;
+    margin: 5px;
+    display: block;
+    height: 38px;
+}
+.managerPfp input{
+    color: white;
+    background-color: #237cb4;
+    padding: 2px;
+}
+.managerPfp img{
+    background-color: #237cb4;
+    width: 40px;
+    height: auto;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.status h4{
+    color: white;
+    font-size: 25px;
+}
+.actions-container{
+    margin-top: 40px;
+    background-color: #60609c;
+    padding: 15px;
+    border-radius: 20px;
+    width: 80px;
+    justify-content: center;
+}
+.actions-container a{
+    background-color: #60609c;
+    text-decoration: none;
+    color: white;
+}
+.styled-table {
+    border-collapse: collapse;
+}
+.styled-table th, .styled-table td {
+    border: 3px solid #000000;
+    padding: 12px;
+    text-align: left;
+}
+.styled-table th {
+    background-color: yellow;
+    color: #000000;
+}
+.styled-table td{
+    color: rgb(0, 0, 0);
+    background-color: white;
+}
+.estado-select {
+    background-color: #2BD426;
+    color: #000000;
+    padding: 6px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.estado-select option{
+    background-color: #2BD426;
+}
+.actualizar-btn {
+    margin-top: 23px;
+    background-color: #E74D4D;
+    color: black;
+    padding: 10px 20px;
+    border: 3px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.actualizar-btn:hover {
+    background-color: #E81919;
+}
